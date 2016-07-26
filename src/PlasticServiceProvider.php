@@ -22,11 +22,6 @@ class PlasticServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/resources/config.php' => config_path('plastic.php'),
         ]);
-
-        // Create the mapping folder
-        $this->publishes([
-            __DIR__.'/resources/database' => database_path(),
-        ], 'database');
     }
 
     /**
